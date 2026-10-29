@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HASAN UNIVERSE — personal portfolio for coding, data science and creative projects." />
+  <title>HASAN UNIVERSE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="nebula nebula-one"></div><div class="nebula nebula-two"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home">HASAN <span>UNIVERSE</span></a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">WELCOME TO MY DIGITAL UNIVERSE</p>
+        <h1>HASAN<br><span>UNIVERSE</span></h1>
+        <p class="lead">Exploring code, data science, technology and creative ideas — one project at a time.</p>
+        <div class="actions"><a class="btn primary" href="#projects">Explore Projects</a><a class="btn ghost" href="#about">About Me</a></div>
+        <div class="mini-stats"><div><b>C</b><span>Learning</span></div><div><b>Python</b><span>Building</span></div><div><b>DS</b><span>Exploring</span></div></div>
+      </div>
+      <div class="space-scene reveal" aria-hidden="true">
+        <div class="orbit orbit-1"><i></i></div><div class="orbit orbit-2"><i></i></div><div class="planet"><div class="planet-glow"></div></div><div class="moon"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-head reveal"><p class="eyebrow">WHO AM I?</p><h2>About <span>Hasan</span></h2></div>
+      <div class="glass about-grid reveal">
+        <div><h3>Student • Developer • Explorer</h3><p>I’m a Computer Science & Engineering student specializing in Data Science. I enjoy learning programming, experimenting with technology, and turning ideas into useful projects.</p><p>My goal is to keep improving as a developer, participate in hackathons, and build software that solves real problems.</p></div>
+        <div class="mission"><span>MISSION 01</span><strong>Learn deeply.</strong><span>MISSION 02</span><strong>Build consistently.</strong><span>MISSION 03</span><strong>Create impact.</strong></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <div class="section-head reveal"><p class="eyebrow">MY TOOLKIT</p><h2>Skills in <span>Orbit</span></h2></div>
+      <div class="cards">
+        <article class="card reveal"><div class="icon">C</div><h3>C Programming</h3><p>Core programming, conditions, loops, functions and problem solving.</p><div class="meter"><i style="--level:72%"></i></div></article>
+        <article class="card reveal"><div class="icon">Py</div><h3>Python</h3><p>Learning Python for programming, automation and future data science work.</p><div class="meter"><i style="--level:58%"></i></div></article>
+        <article class="card reveal"><div class="icon">&lt;/&gt;</div><h3>Web Development</h3><p>Building responsive interfaces with HTML, CSS and JavaScript.</p><div class="meter"><i style="--level:62%"></i></div></article>
+        <article class="card reveal"><div class="icon">DS</div><h3>Data Science</h3><p>Beginning the journey into data, machine learning and intelligent systems.</p><div class="meter"><i style="--level:38%"></i></div></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-head reveal"><p class="eyebrow">THE LAB</p><h2>Featured <span>Projects</span></h2></div>
+      <div class="projects">
+        <article class="project reveal"><div class="project-art p1"><span>01</span></div><div><small>C PROGRAMMING</small><h3>Smart Calculator</h3><p>A menu-driven calculator project built while mastering C fundamentals.</p></div></article>
+        <article class="project reveal"><div class="project-art p2"><span>02</span></div><div><small>WEB PROJECT</small><h3>Voice Assistant UI</h3><p>A futuristic browser interface inspired by modern voice assistants.</p></div></article>
+        <article class="project reveal"><div class="project-art p3"><span>03</span></div><div><small>NEXT MISSION</small><h3>Data Science Project</h3><p>Reserved for an upcoming Python and data science build.</p></div></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact reveal">
+      <div><p class="eyebrow">TRANSMISSION OPEN</p><h2>Let’s build something <span>great.</span></h2><p>Add your email, GitHub and social links here whenever you’re ready.</p></div>
+      <a class="btn primary" href="mailto:your-email@example.com">Contact Me</a>
+    </section>
+  </main>
+
+  <footer><div class="container">© <span id="year"></span> HASAN UNIVERSE <span class="dot">•</span> Built with curiosity 🚀</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
